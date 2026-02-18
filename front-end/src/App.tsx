@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage';
 import ArticlesList from './pages/ArticlesListPage';
 import Layout from './Layout';
-import ArticlePage from './pages/ArticlePage';
+import ArticlePage, { loader } from './pages/ArticlePage';
 import NotFoundPage from './pages/NotFound';
 
 const routes = [{
@@ -26,7 +26,8 @@ const routes = [{
   },
   {
     path:'/articles/:name',
-    element:<ArticlePage />
+    element:<ArticlePage />,
+    loader: loader
   }
 ]
 }]
