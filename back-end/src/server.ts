@@ -4,7 +4,7 @@ import { MongoClient, ServerApiVersion, Db } from "mongodb";
 
 let db:Db;
 async function connectToMongoDB() {
-  const uri = "mongodb+srv://stevemarty08_db_user:4KceEJiIlScRci1x@cluster0.3lzjemj.mongodb.net/?appName=Cluster0";
+  const uri = "";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
